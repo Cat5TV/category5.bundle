@@ -1,5 +1,7 @@
 #category5.bundle
 
+Please Note: At this time this is not a working project.  It is in very early stage.
+
 Watch all the episodes from Category 5 at your pleasure on Plex.
 
 ##Install this script
