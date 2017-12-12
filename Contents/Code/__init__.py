@@ -28,7 +28,7 @@ def Start():
 def MainMenu():
     oc = ObjectContainer()
 
-    oc.add(DirectoryObject(key=Callback(ShowLive, title="Category5 Live Stream", url='rtsp://mediapanel.siglocero.net/8082/8082'), title="Category5 Live Stream", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/defaults/tech.jpg')))
+    oc.add(DirectoryObject(key=Callback(ShowLive, title="Category5 Live Stream", url='http://servers.minetest.tv:8081/live/cat5tv/playlist.m3u8'), title="Category5 Live Stream", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/defaults/tech.jpg')))
     oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5 Technology TV", url='http://rss.cat5.tv/plex/tech-hd.rss'), title="Category5 Technology TV", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/defaults/tech.jpg')))
     oc.add(DirectoryObject(key=Callback(ShowRSS, title="New Every Day", url='http://rss.cat5.tv/plex/ned-hd.rss'), title="New Every Day", thumb='http://cdn3.taliferguson.com/img/defaults/ned.jpg'))
     oc.add(DirectoryObject(key=Callback(ShowRSS, title="Nature Sounds of Ontario Canada", url='http://rss.cat5.tv/plex/nature-hd.rss'), title="Nature Sounds of Ontario Canada", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/defaults/nature.jpg')))
