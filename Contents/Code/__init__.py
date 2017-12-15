@@ -1,4 +1,4 @@
-# Version 1.3
+# Version 1.4
 
 import sys, os, urlparse, urllib, urllib2, cookielib, re, json, time
 
@@ -30,13 +30,13 @@ def Start():
 def MainMenu():
     oc = ObjectContainer()
 
-    oc.add(DirectoryObject(key=Callback(ShowLive, title="Category5 Live Stream", url='http://servers.minetest.tv:8081/live/cat5tv/playlist.m3u8'), title="Category5 Live Stream", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/tech/default/thumb.jpg')))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5 Technology TV", url='http://rss.cat5.tv/plex/tech-hd.rss'), title="Category5 Technology TV", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/tech/default/thumb.jpg')))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5.TV Newsroom", url='http://rss.cat5.tv/plex/newsroom-hd.rss'), title="Category5.TV Newsroom with Sasha Rickman", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/newsroom/default/thumb.jpg')))
+    oc.add(DirectoryObject(key=Callback(ShowLive, title="Category5 Live Stream", url='http://servers.minetest.tv:8081/live/cat5tv/playlist.m3u8'), title="Category5 Live Stream", thumb='http://cdn3.taliferguson.com/img/tech/default/thumb.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5 Technology TV", url='http://rss.cat5.tv/plex/tech-hd.rss'), title="Category5 Technology TV", thumb='http://cdn3.taliferguson.com/img/tech/default/thumb.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5.TV Newsroom", url='http://rss.cat5.tv/plex/newsroom-hd.rss'), title="Category5.TV Newsroom with Sasha Rickman", thumb='http://cdn3.taliferguson.com/img/newsroom/default/thumb.jpg'))
     oc.add(DirectoryObject(key=Callback(ShowRSS, title="New Every Day", url='http://rss.cat5.tv/plex/ned-hd.rss'), title="New Every Day", thumb='http://cdn3.taliferguson.com/img/ned/default/thumb.jpg'))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="The Pixel Shadow", url='http://rss.cat5.tv/plex/tps-hd.rss'), title="The Pixel Shadow", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/tps/default/thumb.jpg')))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Immersive Nature Sounds", url='http://rss.cat5.tv/plex/nature-hd.rss'), title="Immersive Nature Sounds", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/nature/default/thumb.jpg')))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5 Technology TV - Clips", url='http://rss.cat5.tv/plex/clips_tech-hd.rss'), title="Category5 Technology TV - Clips", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/clips_tech/default/thumb.jpg')))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="The Pixel Shadow", url='http://rss.cat5.tv/plex/tps-hd.rss'), title="The Pixel Shadow", thumb='http://cdn3.taliferguson.com/img/tps/default/thumb.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Immersive Nature Sounds", url='http://rss.cat5.tv/plex/nature-hd.rss'), title="Immersive Nature Sounds", thumb='http://cdn3.taliferguson.com/img/nature/default/thumb.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5 Technology TV - Clips", url='http://rss.cat5.tv/plex/clips_tech-hd.rss'), title="Category5 Technology TV - Clips", thumb='http://cdn3.taliferguson.com/img/clips_tech/default/thumb.jpg'))
     return oc
 
 #####################################################################################################################################
