@@ -1,6 +1,6 @@
 #category5.bundle
 
-Version 1.1
+Version 1.2
 
 Watch all the episodes from Category5 at your leasure on Plex.
 
