@@ -1,6 +1,8 @@
+# Version 1.1
+
 import sys, os, urlparse, urllib, urllib2, cookielib, re, json, time
 
-TITLE = 'Category5.TV'
+TITLE = 'Category5 TV Network'
 PREFIX = '/video/category5'
 
 USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:22.0) Gecko/20100101 Firefox/22.0'
@@ -28,10 +30,10 @@ def Start():
 def MainMenu():
     oc = ObjectContainer()
 
-    oc.add(DirectoryObject(key=Callback(ShowLive, title="Category5 Live Stream", url='http://servers.minetest.tv:8081/live/cat5tv/playlist.m3u8'), title="Category5 Live Stream", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/defaults/tech.jpg')))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5 Technology TV", url='http://rss.cat5.tv/plex/tech-hd.rss'), title="Category5 Technology TV", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/defaults/tech.jpg')))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="New Every Day", url='http://rss.cat5.tv/plex/ned-hd.rss'), title="New Every Day", thumb='http://cdn3.taliferguson.com/img/defaults/ned.jpg'))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Nature Sounds of Ontario Canada", url='http://rss.cat5.tv/plex/nature-hd.rss'), title="Nature Sounds of Ontario Canada", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/defaults/nature.jpg')))
+    oc.add(DirectoryObject(key=Callback(ShowLive, title="Category5 Live Stream", url='http://servers.minetest.tv:8081/live/cat5tv/playlist.m3u8'), title="Category5 Live Stream", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/tech/default/thumb.jpg')))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5 Technology TV", url='https://rss.cat5.tv/plex/tech-hd.rss'), title="Category5 Technology TV", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/tech/default/thumb.jpg')))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="New Every Day", url='https://rss.cat5.tv/plex/ned-hd.rss'), title="New Every Day", thumb='http://cdn3.taliferguson.com/img/ned/default/thumb.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Nature Sounds of Ontario Canada", url='https://rss.cat5.tv/plex/nature-hd.rss'), title="Nature Sounds of Ontario Canada", thumb=GetThumb(url='http://cdn3.taliferguson.com/img/nature/default/thumb.jpg')))
     return oc
 
 #####################################################################################################################################
@@ -43,7 +45,7 @@ def ShowLive(title, url):
     oc.add(CreateVideoClipObject(
                                  url = url,
                                  title = title,
-                                 thumb = 'http://cdn3.taliferguson.com/img/defaults/tech.jpg',
+                                 thumb = 'http://cdn3.taliferguson.com/img/tech/default/thumb.jpg',
                                  summary = "None"
                                  ))
     return oc
