@@ -1,4 +1,4 @@
-# Version 1.7
+# Version 1.8
 
 import sys, os, urlparse, urllib, urllib2, cookielib, re, json, time
 
@@ -30,13 +30,14 @@ def Start():
 def MainMenu():
     oc = ObjectContainer()
 
-    oc.add(DirectoryObject(key=Callback(ShowLive, title="Category5 Live Stream", url='http://servers.minetest.tv:8081/live/cat5tv/playlist.m3u8'), summary="Watch the live stream every Wednesday night at 7pm (Toronto time). For local showtimes, visit category5.tv/timezones", thumb='http://cdn3.taliferguson.com/img/live/default/512x512.jpg'))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5 Technology TV", url='http://rss.cat5.tv/plex/tech-hd.rss'), summary="Weekly live digital TV show with Robbie Ferguson focused on topics of interest to tech minds. Ask your questions and get live answers. Recipient of 2014 and 2017 Top 100 Tech Podcasters award.", thumb='http://cdn3.taliferguson.com/img/tech/default/512x512.jpg'))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5.TV Newsroom", url='http://rss.cat5.tv/plex/newsroom-hd.rss'), summary="A weekly tech-centric news broadcast with a Linux bias (Part of Category5 Technology TV).", thumb='http://cdn3.taliferguson.com/img/newsroom/default/512x512.jpg?1.0'))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="New Every Day", url='http://rss.cat5.tv/plex/ned-hd.rss'), summary="Join Jenn Wagar and Carrie Webb as they sit down for a heart-to-heart discussion each week, addressing many of the issues Christians face in their day to day lives, and building your faith and focus through relevant conversation.", thumb='http://cdn3.taliferguson.com/img/ned/default/512x512.jpg'))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="The Pixel Shadow", url='http://rss.cat5.tv/plex/tps-hd.rss'), summary="Minetest (The Free Minecraft Alternative) runs on Linux, Mac and Windows, and we'll show you how to play.", thumb='http://cdn3.taliferguson.com/img/tps/default/512x512.jpg'))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Immersive Nature Sounds", url='http://rss.cat5.tv/plex/nature-hd.rss'), summary="Relax, study or work with peaceful natural sounds recorded in 360 VR.", thumb='http://cdn3.taliferguson.com/img/nature/default/512x512.jpg'))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5 Technology TV - Clips", url='http://rss.cat5.tv/plex/clips_tech-hd.rss'), summary="Clips from Category5 Technology TV.", thumb='http://cdn3.taliferguson.com/img/clips_tech/default/512x512.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5 Technology TV", url='http://rss.cat5.tv/plex/tech-hd.rss'), title="Technology TV", summary="Weekly live digital TV show with Robbie Ferguson focused on topics of interest to tech minds. Ask your questions and get live answers. Recipient of 2014 and 2017 Top 100 Tech Podcasters award.", thumb='http://cdn3.taliferguson.com/img/tech/default/512x512.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5.TV Newsroom", url='http://rss.cat5.tv/plex/newsroom-hd.rss'), title="The Newsroom", summary="A weekly tech-centric news broadcast with a Linux bias (Part of Category5 Technology TV).", thumb='http://cdn3.taliferguson.com/img/newsroom/default/512x512.jpg?1.0'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="New Every Day", url='http://rss.cat5.tv/plex/ned-hd.rss'), title="New Every Day", summary="Join Jenn Wagar and Carrie Webb as they sit down for a heart-to-heart discussion each week, addressing many of the issues Christians face in their day to day lives, and building your faith and focus through relevant conversation.", thumb='http://cdn3.taliferguson.com/img/ned/default/512x512.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="The Pixel Shadow", url='http://rss.cat5.tv/plex/tps-hd.rss'), title="The Pixel Shadow", summary="Minetest (The Free Minecraft Alternative) runs on Linux, Mac and Windows, and we'll show you how to play.", thumb='http://cdn3.taliferguson.com/img/tps/default/512x512.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Immersive Nature Sounds", url='http://rss.cat5.tv/plex/nature-hd.rss'), title="Nature Sounds", summary="Relax, study or work with peaceful natural sounds recorded in 360 VR.", thumb='http://cdn3.taliferguson.com/img/nature/default/512x512.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5 Technology TV - Clips", url='http://rss.cat5.tv/plex/clips_tech-hd.rss'), title="Shorter Clips", summary="Clips from Category5 Technology TV.", thumb='http://cdn3.taliferguson.com/img/clips_tech/default/512x512.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowLive, title="Category5 Live Stream", url='http://servers.minetest.tv:8081/live/cat5tv/playlist.m3u8'), title="Watch Live", summary="Watch the live stream every Wednesday night at 7pm (Toronto time). For local showtimes, visit category5.tv/timezones", thumb='http://cdn3.taliferguson.com/img/live/default/512x512.jpg'))
+
     return oc
 
 #####################################################################################################################################
