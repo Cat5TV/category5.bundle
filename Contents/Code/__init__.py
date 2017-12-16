@@ -1,4 +1,4 @@
-# Version 1.4
+# Version 1.5
 
 import sys, os, urlparse, urllib, urllib2, cookielib, re, json, time
 
@@ -30,13 +30,13 @@ def Start():
 def MainMenu():
     oc = ObjectContainer()
 
-    oc.add(DirectoryObject(key=Callback(ShowLive, title="Category5 Live Stream", url='http://servers.minetest.tv:8081/live/cat5tv/playlist.m3u8'), title="Category5 Live Stream", thumb='http://cdn3.taliferguson.com/img/tech/default/thumb.jpg'))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5 Technology TV", url='http://rss.cat5.tv/plex/tech-hd.rss'), title="Category5 Technology TV", thumb='http://cdn3.taliferguson.com/img/tech/default/thumb.jpg'))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5.TV Newsroom", url='http://rss.cat5.tv/plex/newsroom-hd.rss'), title="Category5.TV Newsroom with Sasha Rickman", thumb='http://cdn3.taliferguson.com/img/newsroom/default/thumb.jpg'))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="New Every Day", url='http://rss.cat5.tv/plex/ned-hd.rss'), title="New Every Day", thumb='http://cdn3.taliferguson.com/img/ned/default/thumb.jpg'))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="The Pixel Shadow", url='http://rss.cat5.tv/plex/tps-hd.rss'), title="The Pixel Shadow", thumb='http://cdn3.taliferguson.com/img/tps/default/thumb.jpg'))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Immersive Nature Sounds", url='http://rss.cat5.tv/plex/nature-hd.rss'), title="Immersive Nature Sounds", thumb='http://cdn3.taliferguson.com/img/nature/default/thumb.jpg'))
-    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5 Technology TV - Clips", url='http://rss.cat5.tv/plex/clips_tech-hd.rss'), title="Category5 Technology TV - Clips", thumb='http://cdn3.taliferguson.com/img/clips_tech/default/thumb.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowLive, title="Category5 Live Stream", url='http://servers.minetest.tv:8081/live/cat5tv/playlist.m3u8'), title="Category5 Live Stream", summary="Watch the live stream every Wednesday night at 7pm (Toronto time). For local showtimes, visit category5.tv/timezones", thumb='http://cdn3.taliferguson.com/img/tech/default/thumb.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5 Technology TV", url='http://rss.cat5.tv/plex/tech-hd.rss'), title="Category5 Technology TV", summary="Weekly live digital TV show with Robbie Ferguson focused on topics of interest to tech minds. Ask your questions and get live answers. Recipient of 2014 and 2017 Top 100 Tech Podcasters award.", thumb='http://cdn3.taliferguson.com/img/tech/default/thumb.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5.TV Newsroom", url='http://rss.cat5.tv/plex/newsroom-hd.rss'), title="Category5.TV Newsroom with Sasha Rickman", summary="A weekly tech-centric news broadcast with a Linux bias (Part of Category5 Technology TV).", thumb='http://cdn3.taliferguson.com/img/newsroom/default/thumb.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="New Every Day", url='http://rss.cat5.tv/plex/ned-hd.rss'), title="New Every Day", summary="Join Jenn Wagar and Carrie Webb as they sit down for a heart-to-heart discussion each week, addressing many of the issues Christians face in their day to day lives, and building your faith and focus through relevant conversation.", thumb='http://cdn3.taliferguson.com/img/ned/default/thumb.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="The Pixel Shadow", url='http://rss.cat5.tv/plex/tps-hd.rss'), title="The Pixel Shadow", summary="Minetest (The Free Minecraft Alternative) runs on Linux, Mac and Windows, and we'll show you how to play.", thumb='http://cdn3.taliferguson.com/img/tps/default/thumb.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Immersive Nature Sounds", url='http://rss.cat5.tv/plex/nature-hd.rss'), title="Immersive Nature Sounds", summary="Relax, study or work with peaceful natural sounds recorded in 360 VR.", thumb='http://cdn3.taliferguson.com/img/nature/default/thumb.jpg'))
+    oc.add(DirectoryObject(key=Callback(ShowRSS, title="Category5 Technology TV - Clips", url='http://rss.cat5.tv/plex/clips_tech-hd.rss'), title="Category5 Technology TV - Clips", summary="Clips from Category5 Technology TV.", thumb='http://cdn3.taliferguson.com/img/clips_tech/default/thumb.jpg'))
     return oc
 
 #####################################################################################################################################
