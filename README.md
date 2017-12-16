@@ -1,7 +1,5 @@
 # category5.bundle
 
-Version 1.5
-
 Watch Category5 TV Network shows on Plex.
 
 ## Install this script
