@@ -1,10 +1,10 @@
-#category5.bundle
+# category5.bundle
 
 Version 1.5
 
-Watch all the episodes from Category5 at your leasure on Plex.
+Watch Category5 TV Network shows on Plex.
 
-##Install this script
+## Install this script
 1. Download: https://github.com/Cat5TV/category5.bundle/archive/master.zip
 2. Unzip.
 3. Rename the folder to category5.bundle (remove the "-master" added by GitHub).
