@@ -11,6 +11,13 @@ Watch Category5 TV Network shows on Plex.
 
 Please visit https://category5.tv/
 
+## Vision Of The Future
+
+Here is a list of some of the things I would love to add to this channel. If you are able to, please help out by coding a PR  :)
+
+1. SRT Subtitles, which I can send to the channel as a URL in <cat5tv:srt>
+2. HLS Playback (currently is MP4). I can send the link to the .m3u8 in <link>
+
 ## Screenshots
 Category5 Channels Menu
 ![Category5 Channels Menu](Contents/Resources/screenshots/main.png?raw=true)
