@@ -11,6 +11,10 @@ Watch Category5 TV Network shows on Plex.
 
 Please visit https://category5.tv/
 
+## Channel Description
+
+Category5.TV provides free, family-friendly video content. Our flagship show is Category5 Technology TV, which offers a weekly ~1 hour program focused on Linux, open source, and general tech. We also offer tech news, nature sounds, a weekly faith program, and a variety of other video content, all free to view.
+
 ## Vision Of The Future
 
 Here is a list of some of the things I would love to add to this channel. If you are able to, please help out by coding a PR  :)
